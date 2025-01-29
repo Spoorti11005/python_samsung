@@ -1,0 +1,14 @@
+# Program to check if a number is prime
+input_number = int(input("Enter a number: "))
+
+# Check if the number is greater than 1
+if input_number > 1:
+    # Check for factors other than 1 and the number itself
+    for i in range(2, input_number):
+        if input_number % i == 0:
+            print(input_number, "is not a prime number")
+            break
+    else:
+        print(input_number, "is a prime number")
+else:
+    print(input_number, "is not a prime number")
